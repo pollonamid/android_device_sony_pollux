@@ -15,8 +15,6 @@
 # Inherit the pollux-common definitions
 $(call inherit-product, device/sony/pollux-common/pollux-common.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/sony/pollux/overlay
-
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
