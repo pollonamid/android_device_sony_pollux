@@ -22,6 +22,9 @@
 #
 #
 
+# Inherit common Phone stuff.
+$(call inherit-product, vendor/custom/config/common.mk)
+
 TARGET_SCREEN_HEIGHT := 1200
 TARGET_SCREEN_WIDTH := 1920
  
@@ -31,7 +34,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Common Sony Resources
 $(call inherit-product, device/sony/common/resources-xxhdpi.mk)
 
-# Inherit from pollux device
-$(call inherit-product, device/sony/pollux/pollux.mk)
+#Inherit Device stuff.
+$(call inherit-product, device/sony/pollux/device.mk)
 
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGP321 BUILD_FINGERPRINT=Sony/SGP321_1275-5841/SGP321:4.1.2/10.1.1.A.1.253/Avt3rw:user/release-keys PRIVATE_BUILD_DESC="SGP321-user 4.1.2 10.1.1.A.1.253 Avt3rw test-keys"
 
+PRODUCT_NAME := custom_pollux
+PRODUCT_DEVICE := pollux
