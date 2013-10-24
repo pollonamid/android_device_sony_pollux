@@ -1,1 +1,1 @@
-add_lunch_combo custom_pollux-userdebug
+add_lunch_combo omni_pollux-userdebug
