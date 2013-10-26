@@ -34,8 +34,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Common Sony Resources
 $(call inherit-product, device/sony/common/resources.mk)
 
-#Inherit Device stuff.
+# Inherit Device stuff.
 $(call inherit-product, device/sony/pollux/device.mk)
+
+# Inherit APN's
+$(call inherit-product, vendor/omni/config/gsm.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGP321 BUILD_FINGERPRINT=Sony/SGP321_1273-0364/SGP321:4.2.2/10.3.1.A.0.244/C_93rg:user/release-keys PRIVATE_BUILD_DESC="SGP321-user 4.2.2 10.3.1.A.0.244 C_93rg test-keys"
 
