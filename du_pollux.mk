@@ -23,7 +23,7 @@
 #
 
 # Inherit common Phone stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/du/config/common.mk)
 
 TARGET_SCREEN_HEIGHT := 1200
 TARGET_SCREEN_WIDTH := 1920
@@ -38,9 +38,9 @@ $(call inherit-product, device/sony/common/resources.mk)
 $(call inherit-product, device/sony/pollux/device.mk)
 
 # Inherit APN's
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/du/config/gsm.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGP321 BUILD_FINGERPRINT=Sony/SGP321_1273-0364/SGP321:4.2.2/10.3.1.A.0.244/C_93rg:user/release-keys PRIVATE_BUILD_DESC="SGP321-user 4.2.2 10.3.1.A.0.244 C_93rg test-keys"
 
-PRODUCT_NAME := omni_pollux
+PRODUCT_NAME := du_pollux
 PRODUCT_DEVICE := pollux
