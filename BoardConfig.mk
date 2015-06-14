@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # inherit from the common pollux definitions
--include device/sony/pollux-common/BoardConfigCommon.mk
+include device/sony/pollux-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
 -include vendor/sony/pollux/BoardConfigVendor.mk
@@ -21,4 +21,4 @@
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SGP321,pollux
 
-TARGET_KERNEL_CONFIG := custom_fusion3_pollux_defconfig
+TARGET_KERNEL_CONFIG := omni_fusion3_pollux_defconfig

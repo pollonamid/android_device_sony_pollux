@@ -35,7 +35,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/sony/common/resources.mk)
 
 # Inherit Device stuff.
-$(call inherit-product, device/sony/pollux/device.mk)
+$(call inherit-product, device/sony/pollux/pollux.mk)
 
 # Inherit APN's
 $(call inherit-product, vendor/omni/config/gsm.mk)
